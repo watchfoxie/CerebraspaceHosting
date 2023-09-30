@@ -7,4 +7,4 @@ Site construit în baza limbajelor HTML&CSS destinat serviciului comercial de g�
 
 | Platforma | Link |
 | ------ | ------ |
-| Google Drive | https://docs.google.com/document/d/1b-NMKHkKBpfb9ktXoDTdv-CdNe9sm7eLDf-hviPkARE/edit?usp=sharing |
+| Google Drive | Temporar fără acces |
