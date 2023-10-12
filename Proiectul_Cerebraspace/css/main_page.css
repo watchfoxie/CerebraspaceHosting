@@ -64,7 +64,7 @@ body section#first_section {
 	top: 0px;
 	left:0px;
 	display: flex;
-	align-item: center;
+
 	height: 70vh;	
 }
 
@@ -83,5 +83,23 @@ body section h2 {
 	font-style: italic;
 	text-align: justify;
 	margin: 0.5% 2%;
+}
+
+body section#third_section {
+	display: flex;
+	height: 30vh;
+	align-items: center;
+	border: 1px solid red;
+}
+
+body section#third_section p {
+	margin: 0;
+	padding: 0;
+	top: 0px;
+	left:0px;
+	width: 100%;
+	text-align: center;
+	color: red;
+	text-transform: uppercase;
 }
 
