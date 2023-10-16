@@ -1,105 +1,90 @@
 @charset "utf-8";
-/* Trebuie de rezolvate problema decoration */
+/* Cerebraspace */
+
 body {
-	margin: 0;
+	margin: 0px;
+	background-image: url("../img/background_image.png");
+	background-size: cover;
+	background-repeat: no-repeat;
 	font-family: 'Exo', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+
+.skeleton {
+	height: 2000px; /* Temporar */
+	width: 90%;
+	background-color: #FFFFFF;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 header {
-	margin: 0;
-	padding: 0;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	height: 2.6%;
+	width: 100%;
 	background-color: #AA77FF;
-	height: 50px;
-	top: 0px;
-	left: 0px;
 }
 
-body header h1 {
-	position: relative;
-	bottom: 6%;
-}
-body header h1 a{
-	margin-left: 2%;
-	font-weight: bolder;
-	font-size: 20pt;
-	text-decoration: none;
-	color: white;
-	padding: 0.3em;
-}
-
-body header nav {
-	margin-right: 0.5%;
-	position: relative;
-	top: 6%;
-}
-
-body header nav ul {
-	margin: 0 0;
-	padding: 0;
-}
-
-body header nav ul li {
-	margin: 0;
-	list-style-type: none;
-	line-height: normal;
+a {
 	display: inline-block;
-}
-
-body header nav ul li a {
-	font-weight: 100;
-	font-size: 10pt;
-	text-transform: uppercase;
+	padding: 20.8px 9px 12.4px 9px;
+	color: #FFFFFF;
 	text-decoration: none;
-	color: white;
+}
+
+.main_logo {
 	float: left;
-	padding: 1.4em;
+	text-align: left;
+	width: auto;
+	font-size: 1.5em;
+	font-weight: bold;
+	letter-spacing: 0px;
+	color: #FFFFFF;
+	margin: 1px 1px;
+}
+#logo_config_area {
+	padding: 9px 19px;
+}
+nav {
+	float: right;
+	text-align: right;
+	width: 60%;
+	margin-top: 1px;
+	margin-left: 1px;
+	margin-bottom: 1px;
 }
 
-body section#first_section {
-	margin: 0;
-	padding: 0;
-	top: 0px;
-	left:0px;
-	display: flex;
-
-	height: 70vh;	
+header nav ul {
+	float: right;
+	display: inline-block;
+	list-style-type: none;
+	padding: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
-body section#first_section img{
-	height: 525px;
+nav ul li {
+	float: left;
+	text-align: left;
+	font-size: 0.8em;
+	text-transform: uppercase;
+	font-weight: 100;
+	letter-spacing: 1px;
+	color: #FFFFFF;
+	border: 0px;
+	margin-right: 15px;
+	
+}
+
+#listitem_config_area {
+	margin-right: 1px;
+}
+
+#menuitem_config_area {
+	padding: 20.8px 9px 12.4px 9px;
+}
+
+.datacenter img {
+	height: 350px;
 	width: 100%;
 }
-
-body section h2 {
-	text-transform: uppercase;
-	margin: 0.5% 2%;
-}
-.informative_para {
-	font-size: 14pt;
-	font-weight: 500;
-	font-style: italic;
-	text-align: justify;
-	margin: 0.5% 2%;
-}
-
-body section#third_section {
-	display: flex;
-	height: 30vh;
-	align-items: center;
-	border: 1px solid red;
-}
-
-body section#third_section p {
-	margin: 0;
-	padding: 0;
-	top: 0px;
-	left:0px;
-	width: 100%;
-	text-align: center;
-	color: red;
-	text-transform: uppercase;
-}
-
