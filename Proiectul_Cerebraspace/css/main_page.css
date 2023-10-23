@@ -18,6 +18,77 @@ body {
     margin: 5px auto 5px auto;
 }
 
+header {
+	display: flex;
+	height: 100%; /* Se extinde vertical pe tot divul */
+	width: 100%;
+	background-color: #AA77FF;
+    border-radius: 10px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.main_logo {
+	display: inline-block;
+	height: auto;
+	width: auto;
+	font-size: 1.5em;
+	font-style: normal;
+	font-weight: bold;
+	letter-spacing: 0px;
+	text-align:center;
+	color: #FFFFFF;
+	margin: 1px 1px;
+}
+
+a {
+	display: inline-block;
+	padding: 15.5px 8px 15.5px 8px;
+	color: #FFFFFF;
+	text-decoration: none;
+	margin: 1px 5px;
+}
+
+#logo_config_area {
+	padding: 9px 19px;
+}
+nav {
+	display: inline-block;
+	height: 100%;
+	width: auto;
+	margin-top: 1px;
+	margin-left: 1px;
+	margin-bottom: 1px;
+}
+
+ul {
+	display: flex;
+	height: 100%;
+	width: auto;
+	list-style-type: none;
+	padding: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+li {
+	text-align: center;
+	font-size: 0.8em;
+	text-transform: uppercase;
+	font-weight: 100;
+	letter-spacing: 1px;
+	color: #FFFFFF;
+	border: 0px;
+
+	
+}
+
+#listitem_config_area {
+	margin-right: 1px;
+}
+
 .skeleton {
 	height: 2000px; /* Temporar */
 	width: 90%;
@@ -26,74 +97,11 @@ body {
     border-radius: 10px;
 }
 
-header {
-	height: 100%; /* Se extinde vertical pe tot divul */
-	width: 100%;
-	background-color: #AA77FF;
-    border-radius: 10px;
-}
-
-a {
-	display: inline-block;
-	padding: 19.8px 9px 13.4px 9px;
-	color: #FFFFFF;
-	text-decoration: none;
-}
-
-.main_logo {
-	float: left;
-	text-align: left;
-	width: auto;
-	font-size: 1.5em;
-	font-weight: bold;
-	letter-spacing: 0px;
-	color: #FFFFFF;
-	margin: 1px 1px;
-}
-#logo_config_area {
-	padding: 9px 19px;
-}
-nav {
-	float: right;
-	text-align: right;
-	width: 60%;
-	margin-top: 1px;
-	margin-left: 1px;
-	margin-bottom: 1px;
-}
-
-header nav ul {
-	float: right;
-	display: inline-block;
-	list-style-type: none;
-	padding: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-}
-
-nav ul li {
-	float: left;
-	text-align: left;
-	font-size: 0.8em;
-	text-transform: uppercase;
-	font-weight: 100;
-	letter-spacing: 1px;
-	color: #FFFFFF;
-	border: 0px;
-	margin-right: 15px;
-	
-}
-
-#listitem_config_area {
-	margin-right: 1px;
-}
-
-#menuitem_config_area {
-	padding: 19.8px 9px 13.4px 9px;
-}
-
 .datacenter img {
 	height: 350px;
 	width: 100%;
     border-radius: 10px 10px 0px 0px;
+}
+p{
+	border: 1px solid red;
 }
