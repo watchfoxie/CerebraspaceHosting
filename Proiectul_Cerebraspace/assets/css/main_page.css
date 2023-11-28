@@ -35,20 +35,20 @@ nav ul {
 	align-items: center;
 	height: 100%;
 	width: auto;
-	padding: 0;
-	margin-top: 0;
-	margin-bottom: 0;
+	padding: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 	list-style-type: none;
 }
 
 nav ul li {
+	border: 0px;
 	font-size: 10pt;
 	text-transform: uppercase;
 	font-weight: 100;
 	letter-spacing: 1px;
 	color: #FFFFFF;
 	text-align: center;
-	border: 0;
 }
 
 nav ul li:first-child{ margin-left: 12px; }
@@ -61,22 +61,22 @@ footer{
 	justify-items: center;
 	height: 300px;
 	width: 90%;
-	margin: 5px auto 5px auto;
 	border-radius: 10px;
+	margin: 5px auto;
 	background-color: #002266;
 }
 
+footer div:first-child p{ margin: 15px 5px; }
+
 footer a{
+	padding: 5px 0px;
+	font-size: 9pt;
 	text-transform: uppercase;
 	text-decoration: none;
 	color: #DEDEDE;
-	padding: 5px 0px;
 }
 
-footer a:hover{
-	color: #FFFFFF;
-	cursor: pointer;
-}
+footer a:hover{ color: #FFFFFF; cursor: pointer; }
 
 #logo_hyperlink{ padding: 8px 20px; }
 
@@ -90,15 +90,10 @@ footer a:hover{
 
 #device_warning_img { 
 	position: relative;
-	left: 50%;
 	height: 64px;
 	width: 64px;
+	left: 50%;
 	transform: translate(-50%);
-	
-}
-
-#init_information{
-	/*In case of upredictable situation to write something*/
 }
 
 #init_information h2{
@@ -110,13 +105,13 @@ footer a:hover{
 #init_information p{
 	padding: 0px 30%;
 	margin: 5px 0px;
-	color: darkgray;
+	color: #5A5A5A;
 	text-align:center;
 }
 
 #devs_container{
 	display:flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	margin: 10px 0px 20px 0px;
 }
 
@@ -134,8 +129,8 @@ footer a:hover{
 
 #security_information p{
 	width: 60%;
-	padding: 41px 3% 41px 3%;
-	margin: 1px;
+	padding: 0px 3%;
+	margin: auto 0px;
 	font-size: 12pt;
 	color: #000000;
 	text-align:justify;
@@ -145,66 +140,48 @@ footer a:hover{
 	display:block;
 	height: 150px;
 	width: 140px;
-	padding: 75px 3% 75px 3%;
+	padding: 0px 3%;
+	margin: auto 0px;
 }
 
 #frequent_questions{
 	display:grid;
-	align-items: center;
 	grid-template-columns: 60% 40%;
+	align-items: center;
 	margin: 20px 0px;
 }
-#questions{
-	transform: translate(6%);
-	width: 94%;
-}
-#questions ul{ 
-	padding-inline-start: 0;
-	list-style-type:none; 
-}
+#questions{ width: 90%; padding: 0px 5%; }
 
-#questions li:first-child{
-	font-weight: bold; 
-	border: none;
-}
+#questions ul{ padding-inline-start: 0; list-style-type:none; }
+
+#questions li:first-child{ border: none; font-weight: 700; }
 
 #questions li{
-	padding: 10px 0px;
 	width: 100%;
-	border-bottom: 1px solid #ebebeb;
+	padding: 10px 0px;
+	border-bottom: 1px solid #DEDEDE;
 }
 
 #questions li:not(:first-child):hover{ cursor: pointer; }
 
-#questions a{
-	color: #000000;
-	text-decoration: none;
-}
+#questions a{ text-decoration: none; color: #000000; }
 
 #questions a:hover{ color: #5A5A5A }
 
-#answers { 
-	transform: translateX(20%); 
-	height: 100%;
-	width: 75%;
-}
+#answers { width: 85%; padding: 0px 7.5%; }
 
 #answers p{
 	display: none;
-	height: 98%;
+	height: 100%;
 	margin: 0;
-	border: 2px solid rgba(170,119,255,0.40);
-	border-radius: 5px;
-	outline: 3px dotted rgba(170,119,255,0.40);
-	text-align:center;
 	opacity: 0;
+	font-style: italic;
+	color:#000000;
+	text-align: center;
 	animation: answer_appear 3s forwards;
 }
 
-#answers p:target{
-	display:block;
-	color:red;
-}
+#answers p:target{ display:block; }
 
 #quick_subscription{
 	height: 300px;
@@ -227,8 +204,8 @@ footer a:hover{
 
 #quick_subscription p{
 	width: 60%;
-	padding: 87px 3% 87px 3%;
-	margin: 1px;
+	padding: 0px 3%;
+	margin: auto 0px;
 	font-size: 14pt;
 	font-weight: bold;
 	color: #FFFFFF;
@@ -238,27 +215,30 @@ footer a:hover{
 #quick_subscription input{
 	height: 25px;
 	width: 200px;
-	margin: 135px 1% 135px 5%;
 	border-color: transparent;
 	border-radius: 5px;
-	outline:none;
+	margin: auto 1% auto auto;
+	outline: none;
 	font-size: 11pt;
-	font-weight: bold;
-	color: #5B5B5B;
+	font-weight: 600;
+	color: #5A5A5A;
 }
 
+#quick_subscription input:focus { outline: 2px solid rgba(170,119,255,0.70); }
+
 #quick_subscription button{
-	height: 26px;
-	width: 50px;
-	padding: 0;
-	border: 1px solid gray;
+	height: 30px;
+	width: 60px;
+	padding: 0px;
+	border: 1px solid #DEDEDE;
 	border-radius: 5px;
-	margin: 70px 6% 70px 1%;
+	margin: auto 3% auto 1%;
 	background-color: #FFFFFF;
 	font-weight: 600;
 	color: #5B5B5B;
 	
 }
+
 #quick_subscription button:active{ border: 2px solid #000000; }
 
 #closure_information{
@@ -280,17 +260,15 @@ footer a:hover{
 	padding: 0px calc((100% - 64px)/2);
 }
 
-#closure_information p{
-	text-align: center;
-	padding: 0px 20px;
-}
+#closure_information p{ text-align: center; padding: 0px 20px; }
 
 #payment_methods{
 	display: grid;
 	grid-template-columns: 50% 50%;
 	grid-template-rows: 50% 50%;
-	justify-items: center;
-	grid-gap: 10px;
+	align-items: start;
+	justify-items: start;
+	grid-gap: 5px;
 }
 
 #payment_methods img{
@@ -299,10 +277,26 @@ footer a:hover{
 	width: 64px;
 }
 
+#social_media{
+	display: grid;
+	grid-template-columns: 25% 75%;
+	grid-template-rows: 25% 25% 25% 25%;
+	align-items: start;
+	justify-items: start;
+	grid-gap: 0px 5px;
+
+}
+
+#social_media img{
+	display:block;
+	height: 32px;
+	width: 32px;
+}
+
 .navbar {
     height: 50px;
     width: 90%;
-	margin: 5px auto 5px auto;
+	margin: 5px auto;
     background-color: transparent;
 }
 
@@ -310,11 +304,9 @@ footer a:hover{
 	display: inline-block;
 	height: 100%;
 	width: 200px;
-	margin: 0;
+	margin: 0px;
 	font-size: 18pt;
 	font-weight: bold;
-	font-style: normal;
-	letter-spacing: 0px;
 	color: #FFFFFF;
 	text-align: left;
 }
@@ -328,24 +320,24 @@ footer a:hover{
 }
 
 .skeleton {
-	/*height: 250vh; DynamIQ no need if page is filled */
+	/*height: 250vh; DynamIQ Updated and excluded: no needs */
 	width: 90%;
 	border-radius: 10px;
-	margin: 5px auto 5px auto;
+	margin: 5px auto;
 	background-color: #FFFFFF;
 }
 
 .resolution_warning{
 	display: none;
 	height: auto;
-	width:100%;
+	width: 100%;
 	text-align: justify;
 }
 
 .team_container{
 	height: 200px;
 	width: 150px;
-	overflow: hidden;
+	padding: 0px 3%;
 }
 
 .overlay_area{
@@ -359,16 +351,14 @@ footer a:hover{
 .devinfo_container span{
 	display:block;
 	position: relative;
+	opacity: 0.90;
 	font-size: 12pt;
 	font-weight: bold;
 	color: #FFFFFF;
 	text-align: center;
-  	opacity: 0.65;
-	
 }
 
-.team_container, .overlay_area, .devinfo_container, .devinfo_container img,
-.devinfo_container span{ border-radius: 6px; }
+.team_container, .overlay_area, .devinfo_container, .devinfo_container img, .devinfo_container span { border-radius: 6px; }
 
 .team_container:hover .overlay_area{ opacity: 0; }
 
@@ -379,57 +369,116 @@ footer a:hover{
 }
 
 .footer_name_groups{
-	font-size: 14pt;
+	font-size: 10pt;
 	text-transform: uppercase;
-	font-weight: bolder;
+	font-weight: 700;
 	color: #FFFFFF;
+	margin: 15px 0px;
 }
 
-.footer_hyperlinks{
-	display:flex;
-	flex-direction: column;
-}
+.footer_hyperlinks{ display:flex; flex-direction: column; }
+
+/* ==============================| Keyframes code area |============================== */
 
 @keyframes answer_appear{ to{ opacity: 100; } }
+
+/* ==============================| Media queries code area |========================== */
 @media screen and (max-width: 895px) {
-	.navbar { height: 100px; }
+	header { flex-direction: column; }
 	
-	.nav_hyperlinks { padding: 15.273px 8px 15.273px 8px; }
-	
-	nav { margin: 0px; width: 100%; }
+	nav { width: 100%; margin: 0px; }
 	
 	nav ul { justify-content: space-evenly; }
-	
-	.main_logo { width: 315px; text-align: center; }
-	
-	#logo_hyperlink { max-width: 315px; padding: 8px 77.568px; }
-	
-	#security_information p { font-size: 10pt; }
-	
-	#security_information img { height: calc(150px/1.3); width: calc(140px/1.3);}
-	
-	header { flex-direction: column; }
 	
 	nav ul li:first-child { margin-left: 0px; }
 
 	nav ul li:last-child { margin-right: 0px; }
+	
+	footer a { font-size: 7pt; }
+	
+	#logo_hyperlink { max-width: 315px; padding: 8px 77.568px; }
+	
+	#security_information p, #frequent_questions, #quick_subscription p, #quick_subscription input, #quick_subscription button, #closure_information p
+	{ font-size: 10pt; }
+	
+	#security_information img { height: calc(150px/1.3); width: calc(140px/1.3); }
+	
+	#quick_subscription input { 
+		height: calc(25px/1.5); 
+		width: calc(200px/1.5);
+		border-radius: calc(5px/1.5);
+	}
+	
+	#quick_subscription button { 
+		height: calc(30px/1.5); 
+		width: calc(60px/1.2); 
+		border-radius: calc(5px/1.5);
+	}
+	
+	#closure_information img { 
+		height: calc(64px/1.3); 
+		width: calc(64px/1.3); 
+		padding: 0px calc((100% - calc(64px/1.3))/2);
+	}
+	
+	#payment_methods img{ height: calc(64px/1.3); width: calc(64px/1.3); }
+	
+	#social_media img { height: calc(32px/1.3); width: calc(32px/1.3); }
+	
+	.navbar { height: 100px; }
+	
+	.nav_hyperlinks { padding: 15.273px 8px 15.273px 8px; }
+	
+	.main_logo { width: 315px; text-align: center; }
+	
+	.footer_name_groups { font-size: 7pt; }
+	
 }
 
 @media screen and (max-width: 645px){
-	.navbar { height: 300px; }
 	ul {flex-direction: column;}
-	li { width: 100%; }
-	.team_container, .overlay_area, .devinfo_container img{
-		height: calc(200px/2);
-		width: calc(150px/2);
-	}
 	
-	#security_information p { font-size: 7.4pt; }
+	li { width: 100%; }
+	
+	footer a { font-size: 4pt; }
+	
+	#security_information p, #frequent_questions, #quick_subscription p, #quick_subscription input, #quick_subscription button, #closure_information p
+	{ font-size: 7.4pt; }
 	
 	#security_information img { height: calc(150px/1.8); width: calc(140px/1.8);}
+	
+	#quick_subscription input { 
+		height: calc(25px/2); 
+		width: calc(200px/2);
+		border-radius: calc(5px/2);
+	}
+	
+	#quick_subscription button { 
+		height: calc(30px/2); 
+		width: calc(60px/1.7); 
+		border-radius: calc(5px/2);
+	}
+	
+	#closure_information img{ 
+		height: calc(64px/1.8); 
+		width: calc(64px/1.8);
+		padding: 0px calc((100% - calc(64px/1.8))/2);
+	}
+	
+	#payment_methods img{ height: calc(64px/2.5); width: calc(64px/2.5); }
+	
+	#social_media img { height: calc(32px/2.5); width: calc(32px/2.5); }
+	
+	.navbar { height: 300px; }
+
+	.team_container, .overlay_area, .devinfo_container img{ height: calc(200px/2); width: calc(150px/2); }
+	
+	.footer_name_groups { font-size: 4pt; }
+	
 }
 
 @media screen and (max-width: 350px){
-	.navbar, #data_center_img, #init_information, #security_information { display:none; }
+	.navbar, #data_center_img, #init_information, #security_information, #frequent_questions, #quick_subscription, #closure_information, footer
+	{ display:none; }
 	.resolution_warning { display: block; }
 }
