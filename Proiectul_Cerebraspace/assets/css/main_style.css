@@ -10,7 +10,8 @@
 	--dark_gray: #5A5A5A;
 	--footer_dark_blue: #002266;
 	--pink_peach_color_init_linear: rgba(255,211,214,0.4);
-	--pink_peach_color_dest_linear: rgba(230,220,246,0.4)
+	--pink_peach_color_dest_linear: rgba(230,220,246,0.4);
+	--flat_red_color: #F44336;
 	
 }
 /* ==============================| Main stylish area |================= */
@@ -78,6 +79,8 @@ nav ul li a:nth-child(1):hover{
 	animation-timing-function: ease-in-out;
 	
 }
+
+main{ max-height: 100%; }
 
 footer{
 	display: grid;
@@ -153,21 +156,6 @@ footer a:hover{ color: var(--default_white); cursor: pointer; }
 	width: 64px;
 	padding: 0px calc((100% - 64px)/2);
 	margin: 10px 0px;
-}
-
-#init_information h2{
-	padding: 0px 35%;
-	margin: 20px 0px 5px 0px;
-	font-size: 18pt;
-	text-align:center;
-}
-
-#init_information p{
-	padding: 0px 30%;
-	margin: 5px 0px;
-	font-size: 13pt;
-	color: var(--dark_gray);
-	text-align:center;
 }
 
 #devs_container{
@@ -365,6 +353,21 @@ footer a:hover{ color: var(--default_white); cursor: pointer; }
 	color: #FFFFFF;
 }
 
+.header_two_style{
+	padding: 0px 35%;
+	margin: 20px 0px 5px 0px;
+	font-size: 18pt;
+	text-align:center;
+}
+
+.under_header_style{
+	padding: 0px 30%;
+	margin: 5px 0px;
+	font-size: 13pt;
+	color: var(--dark_gray);
+	text-align:center;
+}
+
 .team_container{
 	height: 200px;
 	width: 150px;
@@ -435,14 +438,6 @@ footer a:hover{ color: var(--default_white); cursor: pointer; }
 	
 	#logo_hyperlink { padding: 8px calc((300.350px - 150.913px) / 2 - 2px); }
 	
-	#init_information h2 { padding: 0px 35%; }
-	
-	#init_information p { 
-		padding: 0px 25%; 
-		font-size: 11pt;
-		text-align:justify;
-	}
-	
 	#security_information p, #frequent_questions, #quick_subscription p, #quick_subscription input, #quick_subscription button, #closure_information p
 	{ font-size: 10pt; }
 	
@@ -472,6 +467,14 @@ footer a:hover{ color: var(--default_white); cursor: pointer; }
 	
 	.nav_hyperlinks { padding: 15.273px 8px; }
 	
+	.header_two_style { padding: 0px 35%; }
+	
+	.under_header_style{ 
+		padding: 0px 25%; 
+		font-size: 11pt;
+		text-align:justify;
+	}
+	
 	.footer_name_groups { font-size: 7pt; }
 	
 }
@@ -495,8 +498,6 @@ footer a:hover{ color: var(--default_white); cursor: pointer; }
 	#overview_images{ height: 300px }
 	
 	#data_center_img{ height: 300px }
-	
-	#init_information h2 { padding: 0px 20%; }
 	
 	#devs_container { flex-direction: column; align-items: center; height: 640px;}
 	
@@ -532,6 +533,8 @@ footer a:hover{ color: var(--default_white); cursor: pointer; }
 	#social_media img { height: calc(32px/2.5); width: calc(32px/2.5); }
 	
 	.nav_hyperlinks { padding: 15.273px calc((300.350px - 140px)/2 - 2px); margin: 1px;}
+	
+	.header_two_style { padding: 0px 20%; }
 	
 	.footer_name_groups { text-align:center; }
 	
