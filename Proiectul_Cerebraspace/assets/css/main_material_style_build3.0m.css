@@ -1,0 +1,162 @@
+/* Material adaptation for max posible compatibility */
+
+							/* CEREBRASPACE */
+/* ==============================| Config |============================ */
+@import url('https://fonts.cdnfonts.com/css/google-sans');
+/* ==============================| Vars |============================== */
+:root{ --md-divider-thickness: 0px; }
+/* ==============================| Main stylish area |================= */
+body{ background-image: url("../../assets/images/background/abstract_cold_winter.png"); }
+
+md-primary-tab{
+	--_active-indicator-color: #7B55BA;
+	--_active-indicator-height: 5px;
+	--_active-indicator-shape: 5px 5px 0px 0px;
+	--_active-hover-state-layer-color: #6750AA;
+	--_container-color: transparent;
+	--_container-shape: 5px;
+	--_label-text-font: 'Exo', sans-serif;
+	--_active-label-text-color: var(--default_white);
+	--_active-focus-label-text-color: var(--default_white);
+	--_active-hover-label-text-color: var(--default_white);
+	--_focus-label-text-color: var(--default_white);
+	--_hover-label-text-color: var(--default_white);
+	--_label-text-color: var(--default_white);
+	--_label-text-weight: 700;
+	--_active-pressed-label-text-color: var(--default_white);
+	width: 115px;
+}
+
+md-list{
+	padding: 0px;
+	border-radius: 20px;
+	--md-list-container-color: rgba(255,237,238,0.30);
+	--md-list-item-label-text-font: 'Exo', sans-serif;
+	--md-list-item-label-text-color: var(--default_dark);
+	--md-list-item-hover-state-layer-color: #FFB8BC;
+}
+
+
+#navbar { margin-top: 33px; }
+
+#navbar img{
+	position: absolute;
+	height: 64px;
+	width: 64px;
+	top: -0.5%;
+	left: 2%;
+	transform: rotate(-35deg);
+}
+
+#skeleton { border-radius: 20px; }
+
+#overview_images{ 
+	display:flex;
+	height: 300px;
+	width: 100%;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-image: url("../../assets/images/cerebras_christmas_hope.png"); 
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 20px;
+}
+
+#overview_images div{ transform: translateY(-60%); }
+
+#overview_images h1{
+	margin: 5px 0px;
+	font-family: 'Product Sans Black', sans-serif;
+	font-size: 50pt;
+	color: var(--default_white);
+}
+
+#overview_images p{
+	display:block;
+	margin: 5px 0px;
+	font-family: 'Product Sans Thin', sans-serif;
+	font-size: 14pt;
+	text-transform: uppercase;
+	text-align: center;
+	color: var(--default_white);
+}
+
+#questions { padding-left: 3%; }
+
+#questions a{
+	display:block;
+	width: 100%;
+	text-decoration: none; 
+	color: var(--default_dark);
+}
+
+#questions a:hover{ color: var(--default_dark); }
+
+#questions md-list md-list-item:nth-child(1){
+	--md-ripple-hover-color: transparent;
+	--md-ripple-hover-opacity: 0;
+	--md-ripple-pressed-color: transparent;
+	--md-ripple-pressed-opacity: transparent;
+	--md-list-item-label-text-weight: 700;
+	border-bottom: 1px solid var(--default_white);
+	cursor: default;
+}
+
+#questions md-list md-list-item{
+	--md-ripple-pressed-color: var(--main_palette_color);
+	border-bottom: 1px solid var(--light_gray);
+	border-radius: 20px;
+}
+
+#temp_event img{
+	
+}
+
+.nav_hyperlinks { padding: 14.273px 10px; margin: 0px 5px;}
+
+.mdc-card{ width: 150px; margin: 0px 3%; }
+
+.mdc-card__media-content, .mdc-card__primary-action{ height: 200px; width: 100%; }
+
+.mdc-card__ripple{
+	height: 150px;
+	width: 200px;
+	background-repeat: no-repeat;
+}
+
+.mdc-card__actions{ justify-content:  center; }
+
+/* ==============================| Media queries code area |========================== */
+@media screen and (max-width: 895px){
+	md-list{ --md-list-item-label-text-size: 10pt; }
+	
+	#navbar img{ left: 0.5%; }
+	
+	#overview_images h1 { font-size: 35pt; }
+	
+	#overview_images p { font-size: 12pt; }
+}
+
+@media screen and (max-width: 645px){
+	md-list{ --md-list-item-label-text-size: 8pt; }
+	
+	#navbar { height: 100px; }
+	
+	#navbar img{ 
+		height: 50px;
+		width: 50px;
+		top: 0.5%;
+		left: -1%; 
+	}
+	
+	#devs_container { height: calc(250px * 3 + (250px * 20 / 100)); }
+	
+	#overview_images h1 { font-size: 20pt; }
+	
+	#overview_images p { font-size: 12pt; }
+}
+
+@media screen and (max-width: 350px){
+	#overview_images { display: none; }
+}

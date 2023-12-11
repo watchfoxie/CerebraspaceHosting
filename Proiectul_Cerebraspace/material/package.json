@@ -1,0 +1,28 @@
+{
+  "name": "material",
+  "version": "1.0.0",
+  "description": "First Node.Js project for Material M3 integration in web project Cerebraspace Hosting",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/watchfoxie/CerebraspaceHosting.git"
+  },
+  "keywords": [
+    "MaterialM3",
+    "Cerebraspace"
+  ],
+  "author": "Marian Tocana, tocana.mar@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/watchfoxie/CerebraspaceHosting/issues"
+  },
+  "homepage": "https://github.com/watchfoxie/CerebraspaceHosting#readme",
+  "dependencies": {
+    "@material/web": "^1.0.1",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "rollup": "^4.7.0"
+  }
+}
