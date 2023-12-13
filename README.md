@@ -19,6 +19,14 @@ Protipul ToR este disponibil pe adresa linkului GDrive utilizatorilor autorizaț
 
 > Build 2.5 - A fost modificată structura folder pentru proiect prin ajustarea la standartele web dev. În HTML au fost redenumite unele clase, a fost adaugat în corespundere cu figma template regiunea "echipei noastre". În CSS a fost configurat preliminar regiunea dev_team ce urmează a fi completată cu efecte în următoarele build-uri. Am adaugat un set de inconițe conform paltei de culori pentru ulteriorul uz.
 
-| Platforma | Link |
-| ------ | ------ |
-| Google Drive | https://docs.google.com/document/d/1b-NMKHkKBpfb9ktXoDTdv-CdNe9sm7eLDf-hviPkARE/edit?usp=sharing |
+> Build X.YZ - Revin cu informații complete despre toate versiunile până la v3 în scurt timp.
+
+![](https://komarev.com/ghpvc/?username=watchfoxie&color=00a9ff&style=for-the-badge&label=VIZUALIZARI)
+| Website | Adresa |
+| ------- | ------ |
+| Google Drive  | https://docs.google.com/document/d/1b-NMKHkKBpfb9ktXoDTdv-CdNe9sm7eLDf-hviPkARE/edit?usp=sharing |
+| ------- | ------ |
+| Cerebraspace Hosting native webpage | https://cerebra-native.vercel.app/ |
+| ------- | ------ |
+| Cerebraspace Hosting framework release | https://cerebra-material.vercel.app/ |
+
