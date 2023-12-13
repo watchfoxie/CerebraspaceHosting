@@ -21,12 +21,11 @@ Protipul ToR este disponibil pe adresa linkului GDrive utilizatorilor autorizaț
 
 > Build X.YZ - Revin cu informații complete despre toate versiunile până la v3 în scurt timp.
 
+
 ![](https://komarev.com/ghpvc/?username=watchfoxie&color=00a9ff&style=for-the-badge&label=VIZUALIZARI)
 | Website | Adresa |
 | ------- | ------ |
 | Google Drive  | https://docs.google.com/document/d/1b-NMKHkKBpfb9ktXoDTdv-CdNe9sm7eLDf-hviPkARE/edit?usp=sharing |
-| ------- | ------ |
 | Cerebraspace Hosting native webpage | https://cerebra-native.vercel.app/ |
-| ------- | ------ |
 | Cerebraspace Hosting framework release | https://cerebra-material.vercel.app/ |
 
