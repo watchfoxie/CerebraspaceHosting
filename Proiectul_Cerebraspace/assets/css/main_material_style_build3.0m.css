@@ -1,4 +1,4 @@
-/* Material adaptation for max posible compatibility */
+/* Material adaptation for compatibility */
 
 							/* CEREBRASPACE */
 /* ==============================| Config |============================ */
@@ -6,7 +6,7 @@
 /* ==============================| Vars |============================== */
 :root{ --md-divider-thickness: 0px; }
 /* ==============================| Main stylish area |================= */
-body{ background-image: url("../../assets/images/background/abstract_cold_winter.png"); }
+body{ background-image: url("../../assets/images/background/abstract_cold_winter.png"); font-family: 'Product Sans Light', sans-serif;}
 
 md-primary-tab{
 	--_active-indicator-color: #7B55BA;
@@ -36,6 +36,42 @@ md-list{
 	--md-list-item-hover-state-layer-color: #FFB8BC;
 }
 
+md-outlined-text-field{
+	height: 50px;
+	width: 200px;
+	margin: auto 1% auto auto;
+	--md-outlined-text-field-container-shape: 20px;
+	--md-sys-color-primary: var(--main_palette_color);
+	--md-outlined-text-field-input-text-font: 'Product Sans Light', sans-serif;
+	--md-outlined-text-field-label-text-font: 'Product Sans Light', sans-serif;
+	--md-outlined-text-field-supporting-text-font: 'Product Sans Light', sans-serif;
+	--md-outlined-text-field-hover-outline-color: var(--default_white);
+	--md-outlined-text-field-focus-outline-color: var(--default_white);
+	--md-outlined-text-field-outline-color: var(--default_white);
+	--md-outlined-text-field-hover-label-text-color: var(--default_white); 
+	--md-outlined-text-field-focus-label-text-color: var(--default_white);
+	--md-outlined-text-field-label-text-color: var(--default_white);
+	--md-outlined-text-field-hover-input-text-color: var(--default_white);
+	--md-outlined-text-field-focus-input-text-color: var(--default_white);
+	--md-outlined-text-field-input-text-color: var(--default_white);
+	--md-outlined-text-field-hover-supporting-text-color: var(--default_white);
+	--md-outlined-text-field-focus-supporting-text-color: var(--default_white);
+	--md-outlined-text-field-supporting-text-color: var(--default_white);
+	--md-outlined-text-field-label-text-size: 11pt;
+	--md-outlined-text-field-input-text-size: 11pt;
+	--md-outlined-text-field-supporting-text-size: 11pt;
+	--md-outlined-text-field-input-text-weight: 600;
+}
+
+md-filled-tonal-button{
+	max-width: 60px;
+	margin: auto 3% auto 1%;
+	--md-filled-tonal-button-container-height: 30px;
+	--md-filled-tonal-button-container-color: var(--default_white);
+	--md-filled-tonal-button-label-text-font: 'Product Sans Medium', sans-serif;
+	--md-filled-tonal-button-label-text-color: var(--dark_gray);
+	--md-filled-tonal-button-label-text-size: 11pt;
+}
 
 #navbar { margin-top: 33px; }
 
@@ -48,6 +84,8 @@ md-list{
 	transform: rotate(-35deg);
 }
 
+#main_logo { font-family: 'Product Sans Medium', sans-serif; letter-spacing: 1px; }
+
 #skeleton { border-radius: 20px; }
 
 #overview_images{ 
@@ -57,9 +95,7 @@ md-list{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-image: url("../../assets/images/cerebras_christmas_hope.png"); 
-	background-size: cover;
-	background-repeat: no-repeat;
+	background: url("../../assets/images/cerebras_christmas_hope.png") left / cover no-repeat scroll;
 	border-radius: 20px;
 }
 
@@ -78,9 +114,11 @@ md-list{
 	font-family: 'Product Sans Thin', sans-serif;
 	font-size: 14pt;
 	text-transform: uppercase;
-	text-align: center;
 	color: var(--default_white);
+	text-align: center;
 }
+
+#security_information p { margin: 5px 0px; }
 
 #questions { padding-left: 3%; }
 
@@ -94,23 +132,19 @@ md-list{
 #questions a:hover{ color: var(--default_dark); }
 
 #questions md-list md-list-item:nth-child(1){
+	border-bottom: 1px solid var(--default_white);
+	cursor: default;
 	--md-ripple-hover-color: transparent;
 	--md-ripple-hover-opacity: 0;
 	--md-ripple-pressed-color: transparent;
 	--md-ripple-pressed-opacity: transparent;
 	--md-list-item-label-text-weight: 700;
-	border-bottom: 1px solid var(--default_white);
-	cursor: default;
 }
 
 #questions md-list md-list-item{
-	--md-ripple-pressed-color: var(--main_palette_color);
 	border-bottom: 1px solid var(--light_gray);
 	border-radius: 20px;
-}
-
-#temp_event img{
-	
+	--md-ripple-pressed-color: var(--main_palette_color);
 }
 
 .nav_hyperlinks { padding: 14.273px 10px; margin: 0px 5px;}
@@ -131,6 +165,20 @@ md-list{
 @media screen and (max-width: 895px){
 	md-list{ --md-list-item-label-text-size: 10pt; }
 	
+	md-outlined-text-field{
+		width: calc(200px/1.5);
+		border-radius: calc(20px/1.5);
+		--md-outlined-text-field-label-text-size: 10pt;
+		--md-outlined-text-field-input-text-size: 10pt;
+		--md-outlined-text-field-supporting-text-size: 10pt;
+	}
+	
+	md-filled-tonal-button{
+		max-width: 60px;
+		--md-filled-tonal-button-container-height: calc(30px/1.5);
+		--md-filled-tonal-button-label-text-size: 10pt;	
+	}
+	
 	#navbar img{ left: 0.5%; }
 	
 	#overview_images h1 { font-size: 35pt; }
@@ -140,6 +188,20 @@ md-list{
 
 @media screen and (max-width: 645px){
 	md-list{ --md-list-item-label-text-size: 8pt; }
+	
+	md-outlined-text-field{
+		width: calc(200px /2);
+		border-radius: calc(20px/2);
+		--md-outlined-text-field-label-text-size: 6pt;
+		--md-outlined-text-field-input-text-size: 8pt;
+		--md-outlined-text-field-supporting-text-size: 6pt;
+	}
+	
+	md-filled-tonal-button{
+		--md-filled-tonal-button-container-height: calc(30px/2);
+		max-width: 60px;
+		--md-filled-tonal-button-label-text-size: 8pt;	
+	}
 	
 	#navbar { height: 100px; }
 	
@@ -157,6 +219,4 @@ md-list{
 	#overview_images p { font-size: 12pt; }
 }
 
-@media screen and (max-width: 350px){
-	#overview_images { display: none; }
-}
+@media screen and (max-width: 350px){ #overview_images { display: none; } }

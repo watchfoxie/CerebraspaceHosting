@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 	<link rel="stylesheet" href="../assets/css/main_style_build3.0.css">
 	<link rel="stylesheet" href="../assets/css/main_material_style_build3.0m.css">
-	<link rel="stylesheet" href="../assets/css/web_host_style_build3.0m.css"> <!--Override own stylesheet-->
+	<link rel="stylesheet" href="../assets/css/control_panel_style_build3.0m.css"> <!--Override own stylesheet-->
 	<link rel="icon" type="image/png" href="../assets/images/icons/favicon.png">
 	<link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
   	<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
@@ -18,26 +18,42 @@
     <div id="navbar">
 	    <header>
 			<img src="../assets/images/icons/christmas_hat_ico.png" alt="hat"/>
-			<h1 id="main_logo"><a href="index_build3.0m.html" id="logo_hyperlink" class="nav_hyperlinks">Cerebraspace</a></h1>
+			<h1 id="main_logo"><a href="index_build3.1m.html" id="logo_hyperlink" class="nav_hyperlinks">Cerebraspace</a></h1>
 			<nav>
 				<md-tabs>
-  					<md-primary-tab><a class="nav_hyperlinks" href="announce_build3.0m.html" >Anunturi</a></md-primary-tab>
-  					<md-primary-tab><a class="nav_hyperlinks" href="game_host_build3.0m.html" >Host Jocuri</a></md-primary-tab>
-  					<md-primary-tab active><a class="nav_hyperlinks" href="web_host_build3.0m.html" >Host web</a></md-primary-tab>
-					<md-primary-tab><a class="nav_hyperlinks" href="control_panel_build3.0m.html">Panou de control</a></md-primary-tab>
-					<md-primary-tab><a class="nav_hyperlinks" href="contacts_build3.0m.html">Contacte</a></md-primary-tab>
+  					<md-primary-tab><a class="nav_hyperlinks" href="announce_build3.1m.html" >Anunturi</a></md-primary-tab>
+  					<md-primary-tab><a class="nav_hyperlinks" href="game_host_build3.1m.html" >Host Jocuri</a></md-primary-tab>
+  					<md-primary-tab><a class="nav_hyperlinks" href="web_host_build3.1m.html" >Host web</a></md-primary-tab>
+					<md-primary-tab active><a class="nav_hyperlinks" href="control_panel_build3.1m.html">Panou de control</a></md-primary-tab>
+					<md-primary-tab><a class="nav_hyperlinks" href="contacts_build3.1m.html">Contacte</a></md-primary-tab>
 				</md-tabs>
 			</nav>
 		</header>
     </div>
 	<div id="skeleton">
 		<main>
-			<section id="web_options">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, ullam non nam odio soluta beatae eum explicabo perspiciatis, consectetur quaerat numquam esse saepe magni nisi, deserunt nesciunt, voluptatibus neque dignissimos voluptas ipsam. Velit temporibus aliquid facilis, ullam repudiandae neque optio!</p>
-			</section>
-			<section id="resolution_warning">
-				<img id="device_warning_img" src="../assets/images/icons/device_warning_ico.png" alt="avertizare dispozitiv"/>
-				<p>Dispozitivul dumneavoastră are rezoluția ecranului mai mică decât (375x667px) fapt ce nu permite afișarea conținutului sitului Cerebraspace. Recomandam accesarea paginii web pe calculatorul staționar, laptop, tablete, smarphone, frigidere, cuptor cu microunde care au ecran mai mare decât rezoluția sus menționată!</p>
+			<section id="signup_window">
+				<form id="login_form" action="#login_request.html" accept-charset="UTF-8" target="_self">
+					<h2>Autentificare cont</h2><hr>
+					<div class="upper_window">
+						<label for="user_name">Nume de utilizator</label>
+        				<input id="login_input" type="text" placeholder="Login..." name="user_name" required>
+        				<label for="user_password">Parola</label>
+        				<input id="password_input" type="password" placeholder="Parola..." name="user_password" required>
+						<button id="log_in_button" type="submit">Intră</button>
+					</div>
+					<div class="lower_window">
+						<label for="remember">
+							<input type="checkbox"  checked="checked" name="remember"/>Reține datele de intrare
+						</label>
+        				<a class="helpful_hiperlinks" href="#forgot_password.html"> Am uitat parola!</a>
+						<a class="helpful_hiperlinks" href="#register_account.html">Crează un cont.</a>
+      				</div>
+				</form>
+				<div id="resolution_warning">
+					<img id="device_warning_img" src="../assets/images/icons/device_warning_ico.png" alt="avertizare dispozitiv"/>
+					<p>Dispozitivul dumneavoastră are rezoluția ecranului mai mică decât (375x667px) fapt ce nu permite afișarea conținutului sitului Cerebraspace. Recomandam accesarea paginii web pe calculatorul staționar, laptop, tablete, smarphone, frigidere, cuptor cu microunde care au ecran mai mare decât rezoluția sus menționată!</p>
+				</div>
 			</section>
 		</main>
 	</div>

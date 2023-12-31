@@ -19,10 +19,18 @@ Protipul ToR este disponibil pe adresa linkului GDrive utilizatorilor autorizaț
 
 > Build 2.5 - A fost modificată structura folder pentru proiect prin ajustarea la standartele web dev. În HTML au fost redenumite unele clase, a fost adaugat în corespundere cu figma template regiunea "echipei noastre". În CSS a fost configurat preliminar regiunea dev_team ce urmează a fi completată cu efecte în următoarele build-uri. Am adaugat un set de inconițe conform paltei de culori pentru ulteriorul uz.
 
-> Build X.YZ - Revin cu informații complete despre toate versiunile până la v3 în scurt timp.
+> Build 2.6 - A fost completată secțiunea privind informațiile despre securitatea și protecția garantată de hostingul Cerebraspace, a fost adăugată listă întrebărilor clasice adresate echipei de suport, a fost scrise datele ce consolidează încrederea în serviciile noaste referitoare la reduceri, echipament, locație host și crearea regulată a copiilor de rezervă, a fost implementată prima versiune de footer și lucrări CSS pentru toate cele enumerate.
 
+> Build 2.7 - A fost redactat footer pentru aspect mai plăcut și eliminarea erorilor de afișare, a fost eficientizat algoritmul de afișare pentru warning resolution, schimbate parametrii dimensiunii pentru diferite proprietăți CSS, a fost modificat prin redactare textul informațiilor ce consolidează încrederea în serviciile noastre, a fost adăugate câteva clase pentru stilizarea specializată a unor elemente footer.
 
-![](https://komarev.com/ghpvc/?username=watchfoxie&color=00a9ff&style=for-the-badge&label=VIZUALIZARI)
+> Build 2.8 - A fost introdusă actualizare globală o nouă pagină - Anunțuri, a fost pregătit prototipul de stilizare a paginii respective, a fost integrată o nouă metodologie de lucru în codul CSS - variabile globale pentru arborele DOM, a fost eliminate unele clase pentru optimizarea codului, a fost adăugată libraria de animații animate.style, a fost actualizare pachetul de iconițe.
+
+> Build 2.9 - A fost revăzut codul paginii principale pentru optimizare, navbarul a fost remodelat pentru experiență live animate button, a fost adăugat un clip oficial al sitului disponibil primul în lista de anunțuri, adăugat alt content media există variația: video, iframe și audio, a fost scris media queries pentru responsitivitate ca main page.
+
+> Build 3.0 - Realizarea restructurării globale a fișierelor de proiect pentru existența versiunii native și framework într-un singur folder 2in1, a fost implementată migrarea paginii principale pe material M3 și M2(pentru completarea componentelor lipsă cum ar fi web cards) parțial celelalte pagini, versiunea material a fost ornamentată potrivit sărbătorilor de iarnă, la intrare pe site imaginea de prefață a fost optimizată pentru adaptare relativă la redemensionare manuală sau auto pentru dispozitive mobile, a fost redenumit și șters media contentul neactual sau greșit gramatical.
+
+> Build 3.1 Release - Au fost create și adaptate paginile host jocuri, host web, panou de control și contacte, a fost creat design responsiv pentru fiecare din ele, a fost optimizata modularitatea css pentru pagină html.
+
 | Website | Adresa |
 | ------- | ------ |
 | Google Drive  | https://docs.google.com/document/d/1b-NMKHkKBpfb9ktXoDTdv-CdNe9sm7eLDf-hviPkARE/edit?usp=sharing |

@@ -1,7 +1,66 @@
 							/* CEREBRASPACE */
 /* ==============================| Override css |============================== */
-#skeleton { background-color: transparent; border: 1px solid transparent; }
+#skeleton{ background-color: transparent; }
 
+#signup_window{
+	height: 400px;
+	width: 300px;
+	border: 5px solid var(--light_main_palette_color);
+	border-radius: 10px;
+	margin: 0px auto;
+	background-color: var(--default_white);
+}
+
+#login_form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#login_form h2{
+	color: var(--dark_gray);
+	text-align: center;
+}
+
+#login_input, #password_input{
+	display: inline-block;
+	width: 100%;
+	padding: 16px 8px;
+	margin: 8px 0px;
+	border: 1px solid var(--light_gray);
+	box-sizing: border-box;
+}
+
+#log_in_button{
+	width: 100%;
+	padding: 14px 0;
+	margin: 10px 0;
+	border: none;
+	background-color: #8ebf42;
+	color: white;
+	cursor: pointer;
+}
+
+#log_in_button:hover{ opacity: 0.7; }
+
+.signup_entry_boxes{ padding: 0px 5px;}
+
+.user_password{ text-align: right; }
+
+.upper_window{ padding: 0px 5px; }
+
+.lower_window{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	width: 280px;
+	padding: 0px 5px;
+	background-color: var(--whitey_gray); 
+}
+
+.lower_window input:hover{ cursor: grabbing; }
+
+.lower_window a{ display: block; }
 
 /* ==============================| Override media queries |============================== */
 @media screen and (max-width: 895px){ 
@@ -15,5 +74,7 @@
 @media screen and (max-width: 350px){
 	#skeleton { background-color: var(--default_white);}
 	
-	#control_panel_form { display: none; }
+	#signup_window { border: none; }
+	
+	#login_form { display: none; }
 }

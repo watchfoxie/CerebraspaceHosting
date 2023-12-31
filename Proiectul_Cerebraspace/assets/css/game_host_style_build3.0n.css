@@ -1,18 +1,206 @@
 							/* CEREBRASPACE */
+/* ==============================| Config |============================ */
+@import url('https://fonts.cdnfonts.com/css/silkscreen-2');
 /* ==============================| Override css |============================== */
-#skeleton{ border: 1px solid transparent; }
+table {
+	width: 90%;
+	border-collapse: collapse;
+	border-radius: 20px;
+	margin: 0px auto var(--vertical_spacing) auto;
+	outline: 1px solid var(--light_gray);
+	background-color: var(--default_white);
+	overflow: hidden;
+}
 
+thead tr{
+	height: 50px;
+	font-size: 13pt;
+	background-color: var(--dark_gray);
+	color: var(--default_white);
+}
 
+tbody tr{
+	height: 49px;
+	font-size: 12pt;
+	border-bottom: 1px solid var(--light_gray);
+	font-weight: 500;
+	text-align: center;
+}
+
+tbody tr:last-child{ border-bottom: 0px; }
+
+tbody tr:hover{
+	background-color: var(--main_palette_color);
+	color: var(--default_white);
+}
+
+tbody tr td:nth-child(5){ min-width: 75px; }
+
+#game_header{
+	font-family: 'Silkscreen', sans-serif;                                                                        
+	padding: 0px 5%;
+	margin: 5px 0px;
+	font-size: 15pt;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: var(--default_white);
+	text-align: center;
+}
+
+#game_banner{ border-radius: 10px 10px 0px 0px; background: url("../../assets/images/game_banner.jpeg") center / cover no-repeat fixed; }
+
+#game_list{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.games_card{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 300px;
+	border: 1px solid rgba(255, 255, 255, .25);
+  	border-radius: 20px;
+	margin: 1% 3%;
+  	background-color: rgba(255, 255, 255, 0.45);
+  	box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+  	backdrop-filter: blur(15px);
+}
+
+.games_card img{
+	height: 150px;
+	width: 250px;
+	border-radius: 20px;
+	margin: 10px 25px;
+	box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.70);
+}
+
+.buy_game_service{
+	display: block;
+	width: 100px;
+    padding: 5px 0px;
+	border: none;
+	border-radius: 20px;
+	margin-bottom: 10px;
+    background-image: linear-gradient(30deg, var(--police_blue), var(--light_blue));
+ 	background-size: 100% auto;
+ 	font-family: inherit;
+ 	font-size: 11pt;
+    text-decoration: none;
+	text-align: center;
+ 	color: white;
+}
+
+.buy_game_service:hover{
+	background-position: right center;
+ 	background-size: 200% auto;
+	animation: pulse 2s 1;
+ 	animation: custom_pulse 1.5s 1;
+}
+
+.buy_game_service:active{ border: 2px solid var(--police_blue); }
+
+.games_description{
+	padding: 0px var(--orizontal_spacing);
+	margin: var(--vertical_spacing) 0px;
+	text-align: justify;
+}
+
+.games_description span{ font-weight: 500; }
+
+.add_in_bag{
+	position: relative;
+  	height: 35px;
+  	width: 160px;
+  	border: 1px solid #AA77FF;
+  	border-radius: 20px;
+  	background-color: #FFFFFF;
+  	transition: .5s;
+}
+
+.add_in_bag:hover{ cursor: pointer; }
+
+.add_in_bag p{
+	position: absolute;
+  	top: 20%;
+  	left: 17%;
+  	padding: 0px;
+  	margin: 0px;
+	font-size: 12pt;
+	color: var(--main_palette_color);
+  	transition: .5s;
+}
+
+tbody tr:hover .add_in_bag{ background-color: #AA77FF; border: 1px solid white; }
+
+tbody tr:hover .add_in_bag p{ left: 10px; color: #FFFFFF; }
+
+.material-symbols-outlined{
+	position: absolute;
+  	top: 20%;
+  	right: 5%;
+  	padding: 0px;
+  	margin: 0px;
+  	font-size: 14pt;
+  	font-variation-settings:
+  	'FILL' 0,
+  	'wght' 500,
+  	'GRAD' 0,
+  	'opsz' 24;
+  	color: var(--default_white);
+  	opacity: 0;
+	transition: .5s;
+}
+
+tbody tr:hover .material-symbols-outlined{ opacity: 1; }
+/* ==============================| Keyframes code area |============================== */
+@keyframes custom_pulse{
+	0%{ box-shadow: 0 0 0 0 var(--flat_cyan); }
+	60%{ box-shadow: 0 0 0 10px transparent; }
+}
 /* ==============================| Override media queries |============================== */
-@media screen and (max-width: 895px){ 
+@media screen and (max-width: 895px){
+	thead tr{ font-size: 11pt; }
 	
+	tbody tr{ font-size: 10pt; }
+	
+	tbody tr td:nth-child(5){ min-width: 35px; }
+	
+	tbody tr:hover .add_in_bag p{ left: calc(10px / 2); }
+	
+	#game_header{ font-size: 13pt; }
+	
+	.add_in_bag{ height: calc(35px / 1.15); width: calc(160px / 1.4); }
+	
+	.add_in_bag p{ left: 12%; font-size: 10pt; }
+	
+	.material-symbols-outlined { font-size: calc(10pt + 1pt); }
 }
 
 @media screen and (max-width: 645px){
+	thead tr{ font-size: 8pt; }
 	
+	tbody tr{ font-size: 7pt; }
+	
+	tbody tr td:nth-child(5){ min-width: 25px; }
+	
+	tbody tr:hover .add_in_bag p{ left: calc(10px / 3.3); }
+	
+	#game_header{ font-size: 12pt; }
+	
+	.buy_game_service, .games_description { font-size: 10pt; }
+	
+	.add_in_bag{ height: calc(35px / 1.4); width: calc(160px / 2); }
+	
+	.add_in_bag p{ left: 12%; font-size: 7pt; }
+	
+	.material-symbols-outlined { font-size: calc(7pt + 1pt); }
 }
 
 @media screen and (max-width: 350px){
-	#game_list { display:none; }
+	#game_banner{ background-image: none;  }
+	
+	#game_header, #game_list, .games_description, #buy_configurations, footer{ display: none; }
 }
-

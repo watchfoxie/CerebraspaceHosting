@@ -1,7 +1,18 @@
 							/* CEREBRASPACE */
 /* ==============================| Override css |============================== */
-#skeleton{ border: 1px solid transparent; }
 
+#skeleton h2{
+	margin: 5px 0px;
+	color: var(--dark_gray);
+	text-align:center;
+}
+#frame_container{ height: 500px; border-radius: 10px;}
+
+#skeleton iframe{
+	height: 500px;
+	width: 100%;
+	border-radius: 5px;
+}
 /* ==============================| Override media queries |============================== */
 @media screen and (max-width: 895px){ 
 	
@@ -11,6 +22,4 @@
 	
 }
 
-@media screen and (max-width: 350px){
-	#call_center { display:none; }
-}
+@media screen and (max-width: 350px){ #skeleton h2, #frame_container{ display: none; } }

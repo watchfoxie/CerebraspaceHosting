@@ -5,18 +5,25 @@
 /* ==============================| Vars |============================== */
 :root{
 	--main_palette_color: #AA77FF;
+	--light_main_palette_color: #C6A3FF;
 	--main_pallette_color_semitransparent: rgba(170,119,255,0.40);
 	--default_white: #FFFFFF;
 	--default_dark: #000000;
 	--light_gray: #DEDEDE;
+	--whitey_gray: #FAFAFA;
 	--dark_gray: #5A5A5A;
+	--light_blue: #4CE3F7;
+	--police_blue: #0400FF;
 	--footer_dark_blue: #002266;
 	--pink_peach_color_init: #FFD3D6;
 	--pink_peach_color_dest: #E6DCF6;
 	--pink_peach_color_init_linear: rgba(255,211,214,0.4);
 	--pink_peach_color_dest_linear: rgba(230,220,246,0.4);
 	--flat_red_color: #F44336;
-	
+	--flat_cyan: #05BADA;
+	--vampire_red: #DE0000;
+	--vertical_spacing: 20px;
+	--orizontal_spacing: 3%;
 }
 /* ==============================| Main stylish area |================= */
 body {
@@ -164,7 +171,7 @@ footer a:hover{ color: var(--default_white); cursor: pointer; }
 #devs_container{
 	display:flex;
 	justify-content: space-between;
-	margin: 10px 0px 20px 0px;
+	margin: 10px 0px var(--vertical_spacing) 0px;
 }
 
 #security_information{
@@ -172,7 +179,7 @@ footer a:hover{ color: var(--default_white); cursor: pointer; }
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
-	margin: 20px 0px;
+	margin: var(--vertical_spacing) 0px;
 	background: linear-gradient(90deg, var(--pink_peach_color_init_linear) 31%, var(--pink_peach_color_dest_linear) 90%);
 	
 }
@@ -198,7 +205,7 @@ footer a:hover{ color: var(--default_white); cursor: pointer; }
 	display:grid;
 	grid-template-columns: 60% 40%;
 	align-items: center;
-	margin: 20px 0px;
+	margin: var(--vertical_spacing) 0px;
 }
 #questions{ width: 90%; padding: 0px 5%;}
 
@@ -235,7 +242,7 @@ footer a:hover{ color: var(--default_white); cursor: pointer; }
 
 #quick_subscription{
 	height: 300px;
-	margin: 20px 0px;
+	margin: var(--vertical_spacing) 0px;
 	background-image: url("../../assets/images/team_discussion.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -296,7 +303,7 @@ footer a:hover{ color: var(--default_white); cursor: pointer; }
 	grid-template-rows: 50% 50%;
 	height: auto;
 	width: 100%;
-	margin: 20px 0px;
+	margin: var(--vertical_spacing) 0px;
 }
 
 #closure_information div{
@@ -358,7 +365,7 @@ footer a:hover{ color: var(--default_white); cursor: pointer; }
 
 .header_two_style{
 	padding: 0px 35%;
-	margin: 20px 0px 5px 0px;
+	margin: var(--vertical_spacing) 0px 5px 0px;
 	font-size: 18pt;
 	text-align:center;
 }
